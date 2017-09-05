@@ -5,6 +5,17 @@ http://btemplates.com/2016/blogger-template-suits/demo/
 
 */
 
+@font-face {
+  font-family: 'Tangerine';
+  src: url('../fonts/Tangerine/Tangerine-Regular.ttf');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf');
+}
+
+
+
 .clear:after {
 	content: "";
 	clear: both;
@@ -18,53 +29,57 @@ img {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: serif;
+	background-size: cover;
+	color: black;
+}
+body {
+	background-image: url("../img/bg.jpg");
+	background-position: top ;
 }
 footer {
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	background-color: black
 }
-footer div {
+footer p {
+	padding-top: 12px;
+}
+footer p span {
 	color: grey;
 	text-align: center;
-	line-height: 100px;
-	font-size: 12px;
+	font-size: 10px;
 	margin: 0 auto;
-}
-footer span {
-	margin-top: 50px;
+    display: block;
 }
 a {
 	text-decoration: none;
 }
 .heading {
-	background-color: black;
 	height: 200px;
-}
-h1 {
-	color: white;
-	text-align: center;
-	line-height: 200px;
-	font-size: 70px;
+	background-image: url("../img/colourful (4).jpg");
+	background-position: center;
 }
 .heading p {
-	color: grey;
-	/*text-align: center;*/
-	/*line-height: 200px;*/
-	/*display: inline-block;*/
-	float: left;
-	position: absolute;
-	top: 130px;
-	left: 470px;
+	padding-top: 12px;	
+}
+.heading p span {
+	text-align: center;
+	margin: 0 auto;
+    display: block;
+}
+.title {
+	font-size: 150px;
+	color: #800080;
+	font-family: 'Tangerine';
+	text-shadow: 4px 4px 4px #aaa;
+}
+.subTitle {
+	color: #00ffff;
 }
 .subheading {
-	background-color: grey;
-	height: 70px;
-}
-.subsubheading {
-	line-height: 70px;
-	text-align: center;
-	padding: 10px;
+	background-color: black;
+	height: 40px;
 	width: 1020px;
 	margin: 0 auto;
 }
@@ -73,33 +88,39 @@ h1 {
 	margin-right: 20px;
 	list-style: none;
 }
-ul {
+.menu li a {
+	font-size: 12px;
+	color: white;
+}
+nav {
 	float: left;
-	line-height: 70px;
-	text-align: center;
-	margin: 0 auto;
+	display: inline-block;
+	line-height: 40px;
 }
 form {
 	float: right;
-} 
-/*nav {
-	text-align: center;
-	width: 1020px;
-	height: 70px;
-	margin: 0 auto;
 	display: inline-block;
-}*/
-
-.menu li a {
-	color: white;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	line-height: 40px;
+}
+form input {
 	font-size: 12px;
+	height: 30px;
+	padding-left: 10px;
 }
 .wrapper {
-	background-color: white;
+	background-color: #DCEDB9;
 	width: 1020px;
 	padding: 10px;
 	margin: 0 auto;
-	padding-top: 50px;
+
+	background-image: url("../img/colourful (1).jpg");
+	background-position: top;
+}
+h2 {
+	font-family: PlayfairDisplay-Bold;
+	padding: 20px 0;
 }
 .left {
 	width: 65%;
@@ -111,6 +132,7 @@ form {
 	float: left;
 	display: inline-block;
 	margin-left: 50px;
+	padding-top: 20px;
 }
 .readmore {
 	display: inline-block;
@@ -120,7 +142,8 @@ form {
 	margin: 20px 0;
 }
 .readmore a {
-	color: darkred;
+	color: red;
+	opacity: 0.7;
 }
 .postedIn a {
 	text-decoration: underline;
@@ -129,13 +152,16 @@ form {
 	margin: 20px 0;
 }
 .postedIn{
-	display: block;
+	display: inline-block;
 	font-size: small;
 }
 .Inleft {
 	width: 30%;
 	float: left;
 	display: inline-block;
+}
+.Inleft img {
+	border: 2px dashed #007acc;
 }
 .Inright {
 	width: 70%;
@@ -152,6 +178,9 @@ form {
 .subscribe {
 	margin: 30px 0;	
 }
+.archives, .categories, .twitter, .popPost {
+	margin: 25px 0;
+}
 .popPost img {
 	width: 100px;
 	height: 60px;
@@ -159,6 +188,28 @@ form {
 .postDesc {
 	text-align: right;
 }
-.categories li {
+li {
 	list-style: none;
 }
+h3 {
+	padding: 5px 0;
+}
+.homebtn a, .subscribe, .subscribe a {
+	color: white;
+}
+.container1, .container3 {
+	background-color: #ecf;
+	border-radius: 10px 10px 10px 10px;
+}
+.container2, .container4 {
+	background-color: #ffc;
+	border-radius: 10px 10px 10px 10px;
+}
+.container5 {
+	border-radius: 10px 10px 10px 10px;
+	background-color: #fcc;
+}
+hr {
+	margin: 10px 0;
+}
+
