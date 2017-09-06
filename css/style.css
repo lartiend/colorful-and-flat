@@ -242,14 +242,22 @@ h3 {
 .container1, .container3 {
 	background-color: #ecf;
 	padding: 0 10px;
+	border: 2px solid black;
 }
-.container2, .container4 {
+.container2 {
 	background-color: #ffc;
 	padding: 0 10px;
+	border: 2px solid black;
+}
+.container4 {
+	background-color: #ffc;
+	padding: 0 10px;
+	border: 2px solid white;
 }
 .container5 {
 	background-color: #fcc;
 	padding: 0 10px;
+	border: 2px solid white;	
 }
 hr {
 	margin: 10px 0;
